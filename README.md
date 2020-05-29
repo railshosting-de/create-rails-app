@@ -49,4 +49,4 @@ The rails wrapper app is tested on Linux and MacOS.
 
 You can find the source code of the quickstart-rails image here:
 
-https://github.com/railshosting-de/quickstart-rails.git
+https://github.com/railshosting-de/quickstart-rails
