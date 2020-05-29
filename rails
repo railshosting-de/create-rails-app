@@ -1,0 +1,12 @@
+#!/bin/bash
+
+app_name=${PWD##*/}
+
+if [ "$1" = "new" ];then
+  app_name=$2
+  mkdir -p `pwd`/$app_name
+  mount_path=$(echo `pwd`/$app_name)
+  exec docker run -ti --rm -v $mount_path:/home/rails railshosting/quickstart-rails "$@"
+else
+  exec docker exec -ti $app_name ash -c "bundle exec rails $*"
+fi
