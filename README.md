@@ -17,7 +17,7 @@ The rails wrapper app is tested on Linux and MacOS.
 1. Install create-rails-app.
 
    ~~~ sh
-   git clone https://github.com/railshosting-de/wrapper-rails.git
+   wget https://raw.githubusercontent.com/railshosting-de/wrapper-rails/master/rails
    sudo mv rails /usr/local/bin/rails
    ~~~
 
